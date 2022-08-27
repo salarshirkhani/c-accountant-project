@@ -46,7 +46,7 @@ namespace WinFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("پاک کردن شرکت با مشکل مواجه شد");
+                MessageBox.Show("پاک کردن مشتری با مشکل مواجه شد");
             }
         }
 
@@ -55,7 +55,13 @@ namespace WinFormsApp1
             dal.Disconnect();
             dal.connect();
             dataGridView7.DataSource = dal.select("select * from customer");
+            dataGridView7.Columns[0].Name = "کد مشتری";
+            dataGridView7.Columns[1].Name = "نام مشتری";
+            dataGridView7.Columns[2].Name = "شماره تلفن مشتری";
+            dataGridView7.Columns[3].Name = "شرکت";
+            dataGridView7.Columns[4].Name = "توضیحات";
             dal.Disconnect();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -70,11 +76,12 @@ namespace WinFormsApp1
                 dal.connect();
                 dal.docommand("UPDATE customer SET name = N'" + dataGridView7.CurrentRow.Cells[1].Value.ToString() +"', number = N'" + dataGridView7.CurrentRow.Cells[2].Value.ToString() + "',company = N'" + dataGridView7.CurrentRow.Cells[3].Value.ToString() + "', description = N'" + dataGridView7.CurrentRow.Cells[4].Value.ToString() + "' WHERE (id = " + dataGridView7.CurrentRow.Cells[0].Value.ToString() + ")");
                 dal.Disconnect();
+                MessageBox.Show(".ویرایش کردن مشتری با موفقیت انجام شد");
                 ManageCustomer_Load(null, null);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(".ویرایش کردن شرکت با مشکل مواجه شد");
+                MessageBox.Show(".ویرایش کردن مشتری با مشکل مواجه شد");
             }
         }
 

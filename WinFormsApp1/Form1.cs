@@ -59,5 +59,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void وضعیتحسابهاToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Account().ShowDialog(this);
+        }
     }
 }

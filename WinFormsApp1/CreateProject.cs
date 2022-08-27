@@ -36,7 +36,7 @@ namespace WinFormsApp1
         {
             string sql = "";
 
-            sql = "INSERT INTO project (name, price, beyane, start_date, end_date,customer_id)" + " VALUES (N'" + textBox1.Text + "', N'" + textBox2.Text + "', N'" + textBox3.Text + "', N'" + maskedTextBox1.Text + "', N'" + maskedTextBox2.Text + "', N'" + listBox1.SelectedValue + "')";
+            sql = "INSERT INTO project (name, price, beyane, start_date, end_date,customer_id)" + " VALUES (N'" + textBox1.Text + "', N'" + textBox2.Text + "', N'" + textBox3.Text + "', N'" + dateTimePicker1.Text + "', N'" + dateTimePicker2.Text + "', N'" + listBox1.SelectedValue + "')";
 
             try
             {

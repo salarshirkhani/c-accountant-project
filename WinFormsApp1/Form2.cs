@@ -35,11 +35,11 @@ namespace WinFormsApp1
                 dal.connect();
                 dal.docommand(sql);
                 dal.Disconnect();
-                MessageBox.Show("ثبت شرکت انجام شد");
+                MessageBox.Show("ثبت مشتری انجام شد");
             }
-            catch (Exception ex)
+            catch 
             {
-                MessageBox.Show("ثبت شرکت با مشکل مواجه شد");
+                MessageBox.Show("ثبت مشتری با مشکل مواجه شد");
             }
         }
 

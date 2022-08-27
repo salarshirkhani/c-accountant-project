@@ -130,6 +130,7 @@
             this.وضعیتحسابهاToolStripMenuItem.Name = "وضعیتحسابهاToolStripMenuItem";
             this.وضعیتحسابهاToolStripMenuItem.Size = new System.Drawing.Size(247, 34);
             this.وضعیتحسابهاToolStripMenuItem.Text = "وضعیت پرداخت پروژه ها";
+            this.وضعیتحسابهاToolStripMenuItem.Click += new System.EventHandler(this.وضعیتحسابهاToolStripMenuItem_Click);
             // 
             // مشتریهاToolStripMenuItem
             // 
@@ -172,6 +173,7 @@
             // 
             // Form1
             // 
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(640, 374);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);

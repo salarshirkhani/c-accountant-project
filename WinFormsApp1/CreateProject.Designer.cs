@@ -31,8 +31,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,6 +40,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // textBox1
@@ -67,27 +67,6 @@
             this.textBox3.Size = new System.Drawing.Size(200, 27);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("fa-IR");
-            this.maskedTextBox1.Location = new System.Drawing.Point(341, 158);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(302, 27);
-            this.maskedTextBox1.TabIndex = 3;
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(31, 158);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(304, 27);
-            this.maskedTextBox2.TabIndex = 4;
-            this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
             // 
             // button1
             // 
@@ -146,7 +125,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("KalamehWeb Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(531, 199);
+            this.label4.Location = new System.Drawing.Point(540, 199);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 32);
             this.label4.TabIndex = 10;
@@ -179,11 +158,27 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "بیعانه";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(342, 158);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(301, 27);
+            this.dateTimePicker1.TabIndex = 14;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(31, 158);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(301, 27);
+            this.dateTimePicker2.TabIndex = 15;
+            // 
             // CreateProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 423);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -193,8 +188,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -211,8 +204,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private MaskedTextBox maskedTextBox1;
-        private MaskedTextBox maskedTextBox2;
         private Button button1;
         private ListBox listBox1;
         private Label label3;
@@ -222,5 +213,7 @@
         private Label label5;
         private Label label6;
         private Label label7;
+        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimePicker2;
     }
 }
